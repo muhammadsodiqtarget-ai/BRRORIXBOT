@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 ADMIN_CHAT_ID = int(os.environ["ADMIN_CHAT_ID"])
 CHANNEL_LINK = "https://t.me/orix_global_agency"
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "leads.db")
+DB_PATH = "/data/leads.db"
 
 (Q1, Q2, Q3, Q4, NAME) = range(5)
 
