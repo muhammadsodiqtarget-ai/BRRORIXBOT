@@ -87,6 +87,7 @@ ANSWER_LABELS = {
 # ─── Database ──────────────────────────────────────────────────────────────────
 
 def init_db():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.execute("""
         CREATE TABLE IF NOT EXISTS leads (
